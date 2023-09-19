@@ -2,6 +2,8 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
+    id("androidx.navigation.safeargs")
+
 }
 
 android {
@@ -70,5 +72,8 @@ dependencies {
 
     //workmanager
     implementation ("androidx.work:work-runtime-ktx:2.8.1")
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
 
 }
